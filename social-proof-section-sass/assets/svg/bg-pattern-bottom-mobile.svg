@@ -1,0 +1,14 @@
+<svg width="622" height="503" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <linearGradient id="a" y2="32.159%" x2="9.399%" y1="69.237%" x1="100%">
+   <stop offset="0%" stop-opacity="0" stop-color="#8A4389"/>
+   <stop offset="100%" stop-color="#512051"/>
+   <stop offset="100%" stop-color="#512051"/>
+   <stop offset="100%" stop-color="#512051"/>
+  </linearGradient>
+ </defs>
+ <g>
+  <title>Layer 1</title>
+  <path id="svg_1" fill-rule="evenodd" fill="url(#a)" d="m-228,502.99999c58.18271,-96.52325 168.25223,-157.55586 330.21013,-183.09658c242.93606,-38.31171 150.97332,-76.95324 270.32629,-153.64123c79.5689,-51.1247 162.38983,-79.54606 248.46356,-85.26218l0,421.99999l-848.99997,0z" opacity="0.05"/>
+ </g>
+</svg>

@@ -1,0 +1,91 @@
+@use '../theme' as thm;
+@use 'sass:map';
+
+//********************************* 
+//* TESTIMONIALS-CONTAINER
+//*********************************
+.testimonials-container {
+    @include thm.less-query($device: 'tablet', $size: 'sm') {
+        @include thm.less-flexbox($wrap: wrap);
+    }
+    @include thm.less-query($device: 'tablet', $size: 'lg') {
+        grid-column: 1 / -1;
+    }
+    @include thm.less-query($device: 'desktop', $size: 'sm') {
+        @include thm.less-flexbox($jt-content: center, $al-items: flex-start);
+    }
+
+    @at-root {
+        .testimonials {
+            &__box {
+                margin-block: 2rem;
+                padding: 2.4rem;
+                font-size: 1.45rem;
+                border-radius: .5em;
+                background-color: map.get(thm.$clr, 'magenta-300');
+                @include thm.less-query($device: 'tablet', $size: 'sm') {
+                    flex-basis: 45%;
+                    margin-inline: auto;
+                }
+                @include thm.less-query($device: 'desktop', $size: 'sm') {
+                    flex-basis: 30%;
+                }
+
+                &:nth-child(2) {
+                    @include thm.less-query($device: 'desktop', $size: 'sm') {
+                        margin-block-start: 6vh;
+                    }
+                }
+
+                &:nth-child(3) {
+                    @include thm.less-query($device: 'desktop', $size: 'sm') {
+                        margin-block-start: 12vh;
+                    }
+                }
+            }
+
+            &__flex {
+                @include thm.less-flexbox();
+            }
+
+            &__user {
+                > img {
+                    margin-inline-end: 2.8rem;
+                    inline-size: 5.5rem;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}
+
+//********************************* 
+//* TESTIMONIALS__INFORMATION
+//*********************************
+.testimonials {
+    &__information {
+        @include thm.less-flexbox($dir: column, $jt-content: center);
+
+        > span { margin: .2rem auto; }
+    }
+
+    @at-root {
+        .information {
+            &__name {
+                font-weight: 700;
+                color: map.get(thm.$clr, 'white');
+            }
+
+            &__verified {
+                font-weight: 400;
+                color: map.get(thm.$clr, 'pink-100');
+            }
+        }
+    }
+
+    &__comment > p {
+        margin-block-start: 2.4rem;
+        line-height: 1.5;
+        color: map.get(thm.$clr, 'magenta-100');
+    }
+}

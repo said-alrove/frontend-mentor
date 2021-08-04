@@ -1,0 +1,156 @@
+/* ## FONTS ## */
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+/* ## VARIABLES ## */
+:root {
+    /* COLORS */
+    --clr-cyan-100: hsl(185deg, 75%, 39%);
+    --clr-cyan-200: hsl(227deg, 10%, 46%);
+    --clr-gray-100: hsl(0, 0%, 95%);
+    --clr-gray-200: hsl(0, 0%, 85%);
+    --clr-gray-300: hsl(0, 0%, 20%);
+    --clr-white: white;
+    --clr-black-100: rgb(0 0 0 / .2);
+    /* FONTS */
+    --ff-main: 'Kumbh Sans';
+    /* LAYOUT */
+    --ly-width: 35rem;
+}
+
+/* ## GLOBALS ## */
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    min-inline-size: 37.5rem;
+    font-family: var(--ff-main);
+    font-size: 16px;
+    font-weight: 400;
+    background-color: var(--clr-cyan-100); 
+    background-image: 
+        url('../assets/icons/bg-pattern-top.svg'),
+        url('../assets/icons/bg-pattern-bottom.svg');
+    background-repeat: no-repeat;
+    background-position: 
+        right calc(47vw + 15%) bottom calc(-27.5vh - 15vw), 
+        left calc(40vw + 25%) top calc(72vh - 10vw);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after { box-sizing: inherit; }
+
+/* ## UTILITIES ## */
+.wrapper {
+    position: absolute;
+    inset-block-start: 50%;
+    inset-inline-start: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card-container {
+    margin-inline: auto;
+    min-inline-size: var(--ly-width);
+    min-block-size: calc(var(--ly-width) * 1.05);
+    box-shadow: 0 2rem 8rem var(--clr-black-100);
+    border-radius: 1rem;
+    background-color: var(--clr-white);
+    overflow: hidden;
+}
+
+/* ## HEADER-CONTAINER ## */
+.header-container {
+    inline-size: 35rem;
+    block-size: 14rem;
+    background-image: url('../assets/icons/bg-pattern-card.svg');
+}
+
+/* ## MAIN-CONTAINER ## */ 
+.main-container { position: relative; }
+
+.main__pic > img {
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: 50%;
+    transform: translate(-50%, -50%);
+    border: .75rem solid var(--clr-white);
+    border-radius: 50%;
+}
+
+.main__information {
+    position: absolute;
+    inset-block-start: 7.5rem;
+    inset-inline-start: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.information__name { 
+    font-weight: 700; 
+    color: var(--clr-gray-300);
+}
+
+.information__age { margin-inline-start: .5rem; }
+
+.information__age,
+.information__city {
+    font-weight: initial;
+    color: var(--clr-cyan-200);
+}
+
+.information__city {
+    margin-block-start: 1rem;
+    font-size: 1.2rem;
+}
+
+/* ## STATS-CONTAINER ## */
+.stats-container {
+    position: relative;
+    inset-block-start: 14rem;
+    display: flex;
+    justify-content: space-evenly;
+    inline-size: 100%;
+    padding-block-start: 2.5rem;
+    text-align: center;
+    border-block-start: .15rem solid var(--clr-gray-100);
+}
+
+.stats__number { 
+    font-weight: 700; 
+    color:var(--clr-gray-300); 
+}
+
+.stats__text { 
+    display: block; 
+    margin-block-start: 1rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: .1em;
+    color: var(--clr-cyan-200);
+}
+
+
+/* ## ATTRIBUTION ## */
+.attribution { 
+    position: absolute;
+    inset-block-end: 50%;
+    inset-inline-start: 50%;
+    transform: translate(-50%, 710%);
+    inline-size: var(--ly-width); 
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: var(--clr-white);
+}
+
+.attribution a:hover { color: var(--clr-gray-200); }

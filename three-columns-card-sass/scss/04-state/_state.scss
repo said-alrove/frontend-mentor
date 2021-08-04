@@ -1,0 +1,12 @@
+@use '../theme' as thm;
+@use 'sass:map';
+
+//********************************
+//* STATES
+//********************************
+.card__box {
+    .button:active { 
+        background-color: transparent; 
+        color: map.get(thm.$clr, 'white-200');
+    }
+}

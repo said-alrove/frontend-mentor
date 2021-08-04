@@ -1,0 +1,17 @@
+@use '../theme' as thm;
+@use 'sass:map';
+
+//********************************* 
+//* ATTRIBUTION
+//*********************************
+.attribution {
+    margin: 1rem auto;
+    font-size: 1.4rem;
+    text-align: center;
+
+    @at-root {
+        &__text > a {
+            color: map.get(thm.$clr, 'magenta-200');
+        }
+    }
+}
