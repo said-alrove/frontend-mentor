@@ -1,0 +1,25 @@
+@use '../theme' as thm;
+@use 'sass:map';
+@use 'sass:color';
+
+//********************************* 
+//* ATTRIBUTION
+//*********************************
+.attribution {
+    margin-block: 2rem;
+    font: {
+        family: map.get(thm.$ff, 'Inter');
+        size: 1.2rem;
+    }
+    text-align: center;
+    color: map.get(thm.$clr, 'white');
+    @include thm.less-query($device: 'tablet', $size: 'md') {
+        font-size: 1.4rem;
+    }
+
+    > a {
+        color: color.change(map.get(thm.$clr, 'white'), $alpha: .5);
+        font-weight: bold;
+        text-decoration: none;
+    }
+}

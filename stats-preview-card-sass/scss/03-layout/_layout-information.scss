@@ -1,0 +1,29 @@
+@use '../theme' as thm;
+@use 'sass:map';
+
+//********************************* 
+//* INFORMATION-CONTAINER
+//*********************************
+.information {
+    &-container { 
+        text-align: center; 
+        @include thm.less-query($device: 'tablet', $size: 'sm') { 
+            text-align: initial;
+        }
+    }
+
+    &__header span { color: map.get(thm.$clr, 'lt-violet-100'); }
+
+    &__paragraph > p {
+        margin-block: 1.5rem;
+        padding-inline: .5rem;
+        line-height: 1.8;
+        @include thm.less-query($device: 'smartphone', $size: 'md') {
+            margin-block: 2.2rem;
+            padding-inline: .75rem;
+        }
+        @include thm.less-query($device: 'tablet', $size: 'lg') {
+            padding-inline-end: 4rem;
+        }
+    }
+}

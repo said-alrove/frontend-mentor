@@ -1,0 +1,6 @@
+//********************************* 
+//* COLORS 
+//*********************************
+@mixin url-img($device: 'mobile') {
+    background-image: url('https://said-alrove.github.io/stats-preview-card-sass/assets/jpg/image-header-#{$device}.jpg');
+}

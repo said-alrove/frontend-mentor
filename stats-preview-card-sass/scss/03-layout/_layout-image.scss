@@ -1,0 +1,23 @@
+@use '../theme' as thm;
+@use 'sass:map';
+
+//********************************* 
+//* IMAGE-CONTAINER 
+//*********************************
+.image-container {
+    block-size: 17.5rem;
+    @include thm.mx-url-img();
+    background: {
+        color: map.get(thm.$clr, 'lt-violet-200');
+        size: cover;
+        blend-mode: soft-light;
+    }
+    @include thm.less-query($device: 'smartphone', $size: 'md') {
+        block-size: 25rem;
+    }
+    @include thm.less-query($device: 'tablet', $size: 'sm') {
+        grid-column: span 1 / -1;
+        block-size: 100%;
+        @include thm.mx-url-img('desktop');
+    }
+}

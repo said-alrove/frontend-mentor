@@ -1,0 +1,10 @@
+@use 'sass:string';
+@import 'https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap';
+
+//********************************* 
+//* FONTS 
+//*********************************
+$ff: (
+    'Inter': string.quote('Inter'),
+    'Lexend': string.quote('Lexend Deca')
+);

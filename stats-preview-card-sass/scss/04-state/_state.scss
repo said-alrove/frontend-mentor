@@ -1,0 +1,16 @@
+@use '../theme' as thm;
+@use 'sass:map';
+@use 'sass:color';
+
+//********************************* 
+//* STATES 
+//*********************************
+.attribution {
+    > a {
+        transition: all 200ms ease-in-out;
+
+        &:hover {
+            color: color.scale(map.get(thm.$clr, 'white'), $lightness: -50%);
+        }
+    }
+}

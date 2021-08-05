@@ -1,0 +1,67 @@
+@use '../theme' as thm;
+@use 'sass:map';
+@use 'sass:color';
+
+//********************************* 
+//* STATS-CONTAINER 
+//*********************************
+.stats {
+    &-container {
+        @include thm.less-flexbox($dir: column, $al-items: center, $jt-content: space-between);
+        margin-block-start: 2rem;
+        block-size: 15rem;
+        @include thm.less-query($device: 'smartphone', $size: 'md') {
+            @include thm.less-flexbox($dir: initial, $jt-content: space-around);
+            block-size: 8rem;
+        }
+        @include thm.less-query($device: 'tablet', $size: 'sm') {
+            @include thm.less-flexbox($jt-content: space-between);
+            margin-block-start: 6rem;
+            block-size: 5rem;
+        } 
+        @include thm.less-query($device: 'tablet', $size: 'lg') {
+            margin-block-start: 8rem;
+            padding-inline-end: 5.5rem;
+        }
+    }
+
+    &__item {
+        @include thm.less-flexbox($dir: column, $al-items: center);
+        @include thm.less-query($device: 'tablet', $size: 'sm') {
+            @include thm.less-flexbox($al-items: initial);
+        }
+
+        span { margin-block: .2rem; }
+    }
+
+    &__number {
+        font: {
+            family: map.get(thm.$ff, 'Inter');
+            size: 1.8rem;
+            weight: bold;
+        }
+        color: map.get(thm.$clr, 'white');
+        @include thm.less-query($device: 'tablet', $size: 'sm') {
+            font-size: 2.2rem;
+        }
+        @include thm.less-query($device: 'tablet', $size: 'lg') {
+            font-size: 2.4rem;
+        }
+    }
+
+    &__name {
+        font: {
+            family: map.get(thm.$ff, 'Lexend');
+            size: 1rem;
+        }
+        text-transform: uppercase;
+        letter-spacing: .1em;
+        color: color.change(map.get(thm.$clr, 'white'), $alpha: .6);
+        @include thm.less-query($device: 'smartphone', $size: 'md') {
+            font-size: 1.2rem;
+        }
+        @include thm.less-query($device: 'tablet', $size: 'lg') {
+            font-size: 1.4rem;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+@use '../theme' as thm;
+@use 'sass:map';
+
+//********************************* 
+//* MAIN-CONTAINER 
+//*********************************
+.main-container {
+    padding: 3rem 2.5rem 2rem;
+    @include thm.less-query($device: 'tablet', $size: 'sm') {
+        padding: 5rem;
+    }
+    @include thm.less-query($device: 'tablet', $size: 'lg') {
+        padding: 8rem 5rem;
+    }
+}

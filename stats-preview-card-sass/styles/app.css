@@ -1,0 +1,246 @@
+@import 'https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap';
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  min-inline-size: 37.5rem;
+  font-size: 16px;
+  background-color: #090b1b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+.information__header > h1,
+.information__paragraph > p,
+span {
+  font-family: "Inter";
+}
+
+.information__header > h1 {
+  font-size: 2.4rem;
+  color: white;
+}
+@media (min-width: 552px) {
+  .information__header > h1 {
+    font-size: 3.6rem;
+  }
+}
+
+.information__paragraph > p {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+@media (min-width: 552px) {
+  .information__paragraph > p {
+    font-size: 1.4rem;
+  }
+}
+
+.wrapper {
+  margin-block: 4rem;
+  inline-size: clamp(30rem, 100%, 120rem);
+  padding-inline: 2rem;
+}
+@media (min-width: 818px) {
+  .wrapper {
+    position: absolute;
+    inset-block-start: 50%;
+    inset-inline-start: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.card-container {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  border-radius: 0.5rem;
+  background-color: #1b1938;
+  overflow: hidden;
+}
+@media (min-width: 818px) {
+  .card-container {
+    display: grid;
+    grid: auto/47.5% 52.5%;
+    grid-auto-flow: dense;
+  }
+}
+@media (min-width: 1080px) {
+  .card-container {
+    border-radius: 1rem;
+  }
+}
+
+.main-container {
+  padding: 3rem 2.5rem 2rem;
+}
+@media (min-width: 818px) {
+  .main-container {
+    padding: 5rem;
+  }
+}
+@media (min-width: 1080px) {
+  .main-container {
+    padding: 8rem 5rem;
+  }
+}
+
+.image-container {
+  block-size: 17.5rem;
+  background-image: url("https://said-alrove.github.io/stats-preview-card-sass/assets/jpg/image-header-mobile.jpg");
+  background-color: #5e297f;
+  background-size: cover;
+  background-blend-mode: soft-light;
+}
+@media (min-width: 552px) {
+  .image-container {
+    block-size: 25rem;
+  }
+}
+@media (min-width: 818px) {
+  .image-container {
+    grid-column: span 1/-1;
+    block-size: 100%;
+    background-image: url("https://said-alrove.github.io/stats-preview-card-sass/assets/jpg/image-header-desktop.jpg");
+  }
+}
+
+.information-container {
+  text-align: center;
+}
+@media (min-width: 818px) {
+  .information-container {
+    text-align: initial;
+  }
+}
+.information__header span {
+  color: #aa5cdb;
+}
+.information__paragraph > p {
+  margin-block: 1.5rem;
+  padding-inline: 0.5rem;
+  line-height: 1.8;
+}
+@media (min-width: 552px) {
+  .information__paragraph > p {
+    margin-block: 2.2rem;
+    padding-inline: 0.75rem;
+  }
+}
+@media (min-width: 1080px) {
+  .information__paragraph > p {
+    padding-inline-end: 4rem;
+  }
+}
+
+.stats-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-block-start: 2rem;
+  block-size: 15rem;
+}
+@media (min-width: 552px) {
+  .stats-container {
+    display: flex;
+    flex-direction: initial;
+    justify-content: space-around;
+    block-size: 8rem;
+  }
+}
+@media (min-width: 818px) {
+  .stats-container {
+    display: flex;
+    justify-content: space-between;
+    margin-block-start: 6rem;
+    block-size: 5rem;
+  }
+}
+@media (min-width: 1080px) {
+  .stats-container {
+    margin-block-start: 8rem;
+    padding-inline-end: 5.5rem;
+  }
+}
+.stats__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 818px) {
+  .stats__item {
+    display: flex;
+    align-items: initial;
+  }
+}
+.stats__item span {
+  margin-block: 0.2rem;
+}
+.stats__number {
+  font-family: "Inter";
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+}
+@media (min-width: 818px) {
+  .stats__number {
+    font-size: 2.2rem;
+  }
+}
+@media (min-width: 1080px) {
+  .stats__number {
+    font-size: 2.4rem;
+  }
+}
+.stats__name {
+  font-family: "Lexend Deca";
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.6);
+}
+@media (min-width: 552px) {
+  .stats__name {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 1080px) {
+  .stats__name {
+    font-size: 1.4rem;
+  }
+}
+
+.attribution {
+  margin-block: 2rem;
+  font-family: "Inter";
+  font-size: 1.2rem;
+  text-align: center;
+  color: white;
+}
+@media (min-width: 912px) {
+  .attribution {
+    font-size: 1.4rem;
+  }
+}
+.attribution > a {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.attribution > a {
+  transition: all 200ms ease-in-out;
+}
+.attribution > a:hover {
+  color: gray;
+}
+
+/*# sourceMappingURL=app.css.map */
