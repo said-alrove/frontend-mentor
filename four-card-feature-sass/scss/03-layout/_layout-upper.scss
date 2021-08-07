@@ -1,0 +1,45 @@
+@use '../theme' as *;
+
+//********************************* 
+//* UPPER-CONTAINER 
+//*********************************
+.upper {
+    &-container { padding-block: 7.5rem 6rem; }
+    
+    &__text {
+        text-align: center;
+
+        &:not(:nth-child(3)) {
+            font-size: 2.4rem; 
+            @include less-query($device: 'tablet', $size: 'sm') {
+                font-size: 2.8rem;
+            }
+            @include less-query($device: 'tablet', $size: 'lg') {
+                font-size: 3.6rem;
+            }
+        }
+
+        &:nth-child(1) {
+            font-weight: 200;
+            color: map-get($clr, 'dk', 'blue-200');
+        }
+
+        &:nth-child(2) {
+            font-weight: 600;
+            color: map-get($clr, 'dk', 'blue-200');
+        }
+
+        &:nth-child(3) {
+            padding-block-start: 1.5rem;
+            font-size: 1.4rem;
+            color: map-get($clr, 'dk', 'blue-100');
+            @include less-query($device: 'tablet', $size: 'sm') {
+                font-size: 1.75rem;
+            }
+            @include less-query($device: 'tablet', $size: 'lg') {
+                margin-inline: auto;
+                inline-size: 55%;
+            }
+        }
+    }
+}

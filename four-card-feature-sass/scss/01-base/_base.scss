@@ -1,0 +1,28 @@
+@use '../theme' as * with (
+    $less-vw-tablet-lg: 1100px,
+    $less-vw-tablet-xl: 1212px
+);
+
+//********************************* 
+//* HTML TAGS 
+//*********************************
+html {
+    font-size: 62.5%;
+    @include less-box();
+}
+
+body { 
+    font: {
+        family: map-get($ff, 'main');
+        size: 16px;
+    }
+    background-color: map-get($clr, 'lt', 'gray-100');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    @include less-box();
+}
+
+img { max-inline-size: 100%; }

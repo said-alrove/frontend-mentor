@@ -1,0 +1,38 @@
+@use '../theme' as *;
+
+//********************************* 
+//* STATES 
+//*********************************
+.main {
+    &__card {
+        $_translate: 10%;
+        transition: all 300ms ease-in-out;
+        @include less-query($device: 'tablet', $size: 'lg') {
+            &:nth-child(1) {
+                &:hover { transform: translateX(-$_translate); }
+            }
+    
+            &:nth-child(2) {
+                &:hover { transform: translateY(-$_translate); }
+            }
+    
+            &:nth-child(3) {
+                &:hover { transform: translateY($_translate); }
+            }
+    
+            &:nth-child(4) {
+                &:hover { transform: translateX($_translate); }
+            }
+        }
+    }
+}
+
+.attribution {
+    > a {
+        transition: all 150ms ease-in-out;
+
+        &:hover { 
+            color: color-scale(map-get($clr, 'dk', 'blue-300'), $lightness: 40%); 
+        }
+    }
+}

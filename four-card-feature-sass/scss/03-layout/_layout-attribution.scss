@@ -1,0 +1,15 @@
+@use '../theme' as *;
+
+//********************************* 
+//* ATTRIBUTION 
+//*********************************
+.attribution {
+    padding-block: 1rem;
+    font-size: 1.4rem;
+    text-align: center;
+
+    > a {
+        color: map-get($clr, 'dk', 'blue-300');
+        text-decoration: none;
+    }
+}

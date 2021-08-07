@@ -1,0 +1,13 @@
+@use '../theme' as *;
+
+//********************************* 
+//* UTILITIES 
+//*********************************
+.container {
+    margin-inline: auto;
+    inline-size: clamp(30rem, 90%, 110rem);
+    padding-inline: 2rem;
+    @include less-query($device: 'tablet', $size: 'lg') {
+        padding-inline: 0;
+    }
+}
