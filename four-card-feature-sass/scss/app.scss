@@ -1,7 +1,16 @@
 //********************************* 
 //* MODULES 
 //*********************************
-@use '01-base/base';
-@use '02-module/module';
-@use '03-layout/index';
-@use '04-state/state';
+@use 'theme' as * with (
+    $less-vw-tablet-lg: 1100px,
+    $less-vw-tablet-xl: 1212px
+);
+
+/* BASE */ 
+@import '01-base/base';
+/* UTILITIES */ 
+@import '02-module/module';
+/* LAYOUT */ 
+@import '03-layout/index';
+/* STATE */
+@import '04-state/state';

@@ -1,4 +1,5 @@
 @import 'https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap';
+/* BASE */
 html {
   font-size: 62.5%;
   box-sizing: border-box;
@@ -22,6 +23,7 @@ img {
   max-inline-size: 100%;
 }
 
+/* UTILITIES */
 .container {
   margin-inline: auto;
   inline-size: clamp(30rem, 90%, 110rem);
@@ -33,6 +35,8 @@ img {
   }
 }
 
+/* LAYOUT */
+/* LAYOUT-UPPER */
 .upper-container {
   padding-block: 7.5rem 6rem;
 }
@@ -77,6 +81,7 @@ img {
   }
 }
 
+/* LAYOUT-MAIN */
 .main-container {
   margin-block-end: 4rem;
 }
@@ -188,6 +193,7 @@ img {
   }
 }
 
+/* LAYOUT-ATTRIBUTION */
 .attribution {
   padding-block: 1rem;
   font-size: 1.4rem;
@@ -198,6 +204,7 @@ img {
   text-decoration: none;
 }
 
+/* STATE */
 .main__card {
   transition: all 300ms ease-in-out;
 }

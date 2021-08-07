@@ -1,6 +1,10 @@
 //********************************* 
 //* COMPONENTS 
 //*********************************
-@use 'layout-upper';
-@use 'layout-main';
-@use 'layout-attribution';
+
+/* LAYOUT-UPPER */ 
+@import 'layout-upper';
+/* LAYOUT-MAIN */ 
+@import 'layout-main';
+/* LAYOUT-ATTRIBUTION */ 
+@import 'layout-attribution';
