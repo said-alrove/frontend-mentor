@@ -1,0 +1,26 @@
+//********************************* 
+//* ATTRIBUTION
+//*********************************
+.attribution {
+    margin-inline: auto;
+    max-inline-size: 90%;
+    padding-block: .5rem;
+    font-size: 1.4rem;
+    text-align: center;
+    @include less-query($device: 'tablet', $size: 'sm') {
+        position: absolute;
+        inset: {
+            block-end: 0;
+            inline-start: 50%;
+        }
+        transform: translateX(-50%);
+    }
+
+    a { 
+        text-decoration: none;
+        color: map-get($clr, 'dk', 'blue-100');
+        transition: all 200ms ease-in-out; 
+
+        &:hover { color: color-scale(map-get($clr, 'dk', 'blue-100'), $saturation: 50%); }
+    }
+}

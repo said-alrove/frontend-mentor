@@ -1,0 +1,29 @@
+//********************************* 
+//* BASE 
+//*********************************
+html {
+    font-size: 62.5%;
+    @include less-box();
+}
+
+body {
+    font: {
+        family: map-get($ff, 'main');
+        size: 16px;
+    }
+    background-color: map-get($clr, 'lt', 'gray-100');
+}
+
+* { @include less-box(); }
+
+//********************************* 
+//* TYPOGRAPHY 
+//*********************************
+h2 { font-size: 1.8rem; }
+
+p { 
+    font-size: 1.2rem; 
+    @include less-query($device: 'mobile', $size: 'xl') {
+        font-size: 1.6rem;
+    }
+}
