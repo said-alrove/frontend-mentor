@@ -3,18 +3,24 @@
 //*********************************
 html {
     font-size: 62.5%;
-    @include less-box();
+    @include less.box();
 }
 
 body {
     font: {
-        family: map-get($ff, 'main');
-        size: 16px;
+        family: map.get(abs.$ff, 'main');
+        size: 1.6rem;
     }
-    background-color: map-get($clr, 'lt', 'gray-100');
+    background-color: map.get(abs.$clr, 'lt', 'gray-100');
 }
 
-* { @include less-box(); }
+* { @include less.box(); }
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 
 //********************************* 
 //* TYPOGRAPHY 
@@ -23,7 +29,7 @@ h2 { font-size: 1.8rem; }
 
 p { 
     font-size: 1.2rem; 
-    @include less-query($device: 'mobile', $size: 'xl') {
+    @include less.query($device: 'mobile', $size: 'xl') {
         font-size: 1.6rem;
     }
 }

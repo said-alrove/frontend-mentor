@@ -2,17 +2,15 @@
 //* CARD-WHY
 //*********************************
 .why {
-    background-color: map-get($clr, 'dk', 'cyan-100');
-    color: map-get($clr, 'white');
+    background-color: map.get(abs.$clr, 'dk', 'cyan-100');
+    color: map.get(abs.$clr, 'white');
     
-    &__paragraph {
-        &-element {
-            display: block;
-            line-height: 1.5;
-            color: map-get($clr, 'lt', 'blue-150');
-            @include less-query($device: 'mobile', $size: 'xl') {
-                line-height: 1.3;
-            }
+    &__item {            
+        display: block;
+        line-height: 1.5;
+        color: map.get(abs.$clr, 'lt', 'blue-150');
+        @include less.query($device: 'mobile', $size: 'xl') {
+            line-height: 1.3;
         }
     }
 }

@@ -7,7 +7,7 @@
     padding-block: .5rem;
     font-size: 1.4rem;
     text-align: center;
-    @include less-query($device: 'tablet', $size: 'sm') {
+    @include less.query($device: 'tablet', $size: 'sm') {
         position: absolute;
         inset: {
             block-end: 0;
@@ -18,9 +18,9 @@
 
     a { 
         text-decoration: none;
-        color: map-get($clr, 'dk', 'blue-100');
+        color: map.get(abs.$clr, 'dk', 'blue-100');
         transition: all 200ms ease-in-out; 
 
-        &:hover { color: color-scale(map-get($clr, 'dk', 'blue-100'), $lightness: -20%); }
+        &:hover { color: color.scale(map.get(abs.$clr, 'dk', 'blue-100'), $lightness: -20%); }
     }
 }

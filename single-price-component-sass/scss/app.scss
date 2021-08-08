@@ -2,11 +2,43 @@
 //* MODULES 
 //*********************************
 
-// * HELPERS
-@import '01-abstracts';
-// * VENDORS 
-@import '02-vendors';
-// * BASE 
-@import '03-base';
+//********************************* 
+//* BUILT-IN MODULES 
+//*********************************
+@use 'sass:math';
+@use 'sass:meta';
+@use 'sass:map';
+@use 'sass:list';
+@use 'sass:color';
+@use 'sass:string';
+@use 'sass:selector';
+
+//********************************* 
+//* ABSTRACTS 
+//*********************************
+@use '01-abstracts/index' as abs;
+
+//********************************* 
+//* VENDORS 
+//*********************************
+@use '02-vendors/lessier' as less with (
+    $vw-mobile-xl: 626px
+);
+
+//********************************* 
+//* BASE 
+//*********************************
+@import '03-base/fonts';
+@import '03-base/base';
+@import '03-base/helpers';
+
+//********************************* 
 //* COMPONENTS 
-@import '04-components';
+//*********************************
+@import 
+    '04-components/card',
+    '04-components/card-join',
+    '04-components/card-subscription',
+    '04-components/card-subscription-btn',
+    '04-components/card-why';
+@import '04-components/attribution';
