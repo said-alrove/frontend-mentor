@@ -16,5 +16,10 @@
         border-radius: .5rem;
         background-color: map-get($clr, 'dk', 'yellow-100');
         color: map-get($clr, 'white');
+        transition: all 200ms ease-in-out;
+
+        &:hover { 
+            background-color: color-scale(map-get($clr, 'dk', 'yellow-100'), $lightness: -10%); 
+        }
     }
 }

@@ -21,6 +21,6 @@
         color: map-get($clr, 'dk', 'blue-100');
         transition: all 200ms ease-in-out; 
 
-        &:hover { color: color-scale(map-get($clr, 'dk', 'blue-100'), $saturation: 50%); }
+        &:hover { color: color-scale(map-get($clr, 'dk', 'blue-100'), $lightness: -20%); }
     }
 }
