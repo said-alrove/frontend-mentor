@@ -1,0 +1,205 @@
+/* latin-ext */
+@font-face {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/redhatdisplay/v4/8vIV7wUr0m80wwYf0QCXZzYzUoToDh20ZKrAMEc.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/redhatdisplay/v4/8vIV7wUr0m80wwYf0QCXZzYzUoToDh20aqrA.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/redhatdisplay/v4/8vIV7wUr0m80wwYf0QCXZzYzUoToRhu0ZKrAMEc.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/redhatdisplay/v4/8vIV7wUr0m80wwYf0QCXZzYzUoToRhu0aqrA.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/redhatdisplay/v4/8vIV7wUr0m80wwYf0QCXZzYzUoTofhm0ZKrAMEc.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/redhatdisplay/v4/8vIV7wUr0m80wwYf0QCXZzYzUoTofhm0aqrA.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  min-inline-size: 360px;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1.6rem;
+  background-color: #e6ecff;
+  background-image: url("https://said-alrove.github.io/order-summary-component/assets/svg/pattern-background-mobile.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  body {
+    background-color: #e6ecff;
+    background-image: url("https://said-alrove.github.io/order-summary-component/assets/svg/pattern-background-desktop.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+.card-container {
+  position: absolute;
+  inset-block-start: 50%;
+  inset-inline-start: 50%;
+  transform: translate(-50%, -50%);
+  inline-size: clamp(30rem, 90%, 37rem);
+  border-radius: 1rem;
+  background-color: white;
+  overflow: hidden;
+}
+
+.card__image img {
+  min-block-size: 17.5rem;
+}
+
+.card__main {
+  padding: 2rem;
+}
+
+.card__header {
+  text-align: center;
+}
+.card__heading {
+  margin-block-start: 0.5rem;
+  font-size: 2.4rem;
+  font-weight: 900;
+  color: #1f2f56;
+}
+.card__heading + * {
+  margin-block: 2rem;
+  padding-inline: 1rem;
+}
+.card__paragraph {
+  font-size: 1.4rem;
+  font-weight: 200;
+  line-height: 1.5em;
+  color: #7280a7;
+}
+
+.plan-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block: 1.5rem 2.5rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: #f5f7ff;
+}
+
+.plan__main {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.plan__icon figure {
+  display: flex;
+  align-items: center;
+}
+.plan__info {
+  font-size: 1.3rem;
+}
+.plan__info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.plan__info-time {
+  font-weight: 900;
+  color: #1f2f56;
+}
+.plan__info-price {
+  font-weight: 200;
+  color: #7280a7;
+}
+.plan__change-btn:active {
+  text-decoration: none;
+  color: #3829e0;
+}
+
+.plan-options .btn {
+  margin-block-start: 1.5rem;
+}
+.plan-options .btn-payment {
+  display: block;
+  padding-block: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 1rem;
+  background-color: #3829e0;
+  color: white;
+  box-shadow: 0 1rem 3rem 0.25rem rgba(0, 0, 0, 0.3);
+}
+.plan-options .btn-payment:active {
+  background-color: #7469ea;
+}
+.plan-options .btn-cancel {
+  display: block;
+  padding-block: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 1rem;
+  color: #7280a7;
+}
+.plan-options .btn-cancel:active {
+  color: #1f2f56;
+}
+
+/*# sourceMappingURL=app.css.map */

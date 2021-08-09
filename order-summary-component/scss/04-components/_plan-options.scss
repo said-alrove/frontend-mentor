@@ -1,0 +1,40 @@
+//********************************* 
+//* PLAN-OPTIONS
+//*********************************
+.plan {
+    &-options {
+        .btn { margin-block-start: 1.5rem; }
+
+        .btn-payment {
+            @include abs.btn
+            (
+                map.get(abs.$clr, 'white'),
+                map.get(abs.$clr, 'dk', 'blue-100')
+            ) {
+                @include less.shadow
+                (
+                    $type: 'box',
+                    $y-axis: 1rem,
+                    $blur: 3rem,
+                    $spread: .25rem,
+                    $color: color.change(map.get(abs.$clr, 'black'), $alpha: .3)
+                );
+
+                &:active {
+                    background-color: color.scale(map.get(abs.$clr, 'dk', 'blue-100'), $lightness: 30%);
+                }
+            }
+        }
+
+        .btn-cancel {
+            @include abs.btn
+            (
+                map.get(abs.$clr, 'dk', 'blue-200')
+            ) {
+                &:active {
+                    color: map.get(abs.$clr, 'dk', 'blue-300');
+                }
+            }
+        }
+    }
+}

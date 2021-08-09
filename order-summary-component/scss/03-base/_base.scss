@@ -1,0 +1,29 @@
+//********************************* 
+//* BASE 
+//*********************************
+html {
+    font-size: 62.5%;
+    @include less.box();
+}
+
+body {
+    min-inline-size: less.$vw-mobile-sm;
+    font: {
+        family: map.get(abs.$ff, 'main');
+        size: 1.6rem;
+    }
+    @include abs.url-background('mobile');
+    @include less.query($device: 'tablet', $size: 'sm') {
+        @include abs.url-background('desktop');
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    @include less.box();
+}
+
+img { max-width: 100%; }
+
+ul { list-style: none; }
