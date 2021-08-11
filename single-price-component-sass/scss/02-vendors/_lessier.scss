@@ -1,7 +1,10 @@
-////////////////////////// 
-// *** LESSIER 1.4 *** // 
-///////////////////////// 
+//************************
+//* LESSIER 1.4
+//************************
 
+//************************
+//* BUILT-IN MODULES
+//************************
 @use 'sass:math';
 @use 'sass:map';
 @use 'sass:list';
@@ -9,10 +12,6 @@
 @use 'sass:selector';
 @use 'sass:string';
 @use 'sass:color';
-
-///////////////////// 
-// *** MIXINS *** //
-////////////////////
 
 //************************
 //* CSS GRID
@@ -187,38 +186,20 @@
 //************************
 //* MEDIA QUERIES
 //************************
-$vw-mobile-sm: 360px !default;
-$vw-mobile-md: 414px !default;
-$vw-mobile-lg: 480px !default;
-$vw-mobile-xl: 552px !default;
-
-$vw-tablet-sm: 768px !default;
-$vw-tablet-md: 912px !default;
-$vw-tablet-lg: 1024px !default;
-$vw-tablet-xl: 1280px !default;
-
-$vw-desktop-sm: 1366px !default;
-$vw-desktop-md: 1536px !default;
-$vw-desktop-lg: 1920px !default;
-
 $screen-sizes: 
 (
-    'mobile': (
-        'sm': $vw-mobile-sm,
-        'md': $vw-mobile-md,
-        'lg': $vw-mobile-lg,
-        'xl': $vw-mobile-xl
+    'smartphone': (
+        'sm': 480px,
+        'md': 552px,
     ),
     'tablet': (
-        'sm': $vw-tablet-sm,
-        'md': $vw-tablet-md,
-        'lg': $vw-tablet-lg,
-        'xl': $vw-tablet-xl
+        'sm': 768px,
+        'md': 912px,
+        'lg': 1080px
     ),
     'desktop': (
-        'sm': $vw-desktop-sm,
-        'md': $vw-desktop-md,
-        'lg': $vw-desktop-lg
+        'sm': 1212px,
+        'md': 1440px
     )
 );
 
