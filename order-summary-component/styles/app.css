@@ -120,7 +120,7 @@ ul {
   color: #1f2f56;
 }
 .card__heading + * {
-  margin-block: 2rem;
+  margin-block: 1rem;
   padding-inline: 1rem;
 }
 .card__paragraph {
@@ -171,7 +171,7 @@ ul {
 }
 
 .plan-options .btn {
-  margin-block-start: 1.5rem;
+  margin-block-start: 1rem;
 }
 .plan-options .btn-payment {
   display: block;

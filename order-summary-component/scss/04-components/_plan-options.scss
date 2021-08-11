@@ -3,7 +3,7 @@
 //*********************************
 .plan {
     &-options {
-        .btn { margin-block-start: 1.5rem; }
+        .btn { margin-block-start: 1rem; }
 
         .btn-payment {
             @include abs.btn

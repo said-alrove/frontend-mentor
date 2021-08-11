@@ -15,7 +15,7 @@
         color: map.get(abs.$clr, 'dk', 'blue-300');
 
         & + * {
-            margin-block: 2rem;
+            margin-block: 1rem;
             padding-inline: 1rem;
         }
     }
