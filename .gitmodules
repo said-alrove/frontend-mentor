@@ -16,3 +16,9 @@
 [submodule "order-summary-component"]
 	path = order-summary-component
 	url = https://github.com/said-alrove/order-summary-component
+[submodule "three-columns-card-sass"]
+	path = three-columns-card-sass
+	url = https://github.com/said-alrove/three-columns-card-sass
+[submodule "single-price-component-sass"]
+	path = single-price-component-sass
+	url = https://github.com/said-alrove/single-price-component-sass
