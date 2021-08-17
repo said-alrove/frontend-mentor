@@ -1,3 +1,18 @@
 [submodule "four-card-feature-sass"]
 	path = four-card-feature-sass
 	url = https://github.com/said-alrove/four-card-feature-sass
+[submodule "three-columns-card"]
+	path = three-columns-card
+	url = https://github.com/said-alrove/three-columns-card
+[submodule "stats-preview-card-sass"]
+	path = stats-preview-card-sass
+	url = https://github.com/said-alrove/stats-preview-card-sass
+[submodule "social-proof-section-sass"]
+	path = social-proof-section-sass
+	url = https://github.com/said-alrove/social-proof-section-sass
+[submodule "profile-card-component"]
+	path = profile-card-component
+	url = https://github.com/said-alrove/profile-card-component
+[submodule "order-summary-component"]
+	path = order-summary-component
+	url = https://github.com/said-alrove/order-summary-component
