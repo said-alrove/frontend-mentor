@@ -1,8 +1,0 @@
-//********************************* 
-//* MIXINS
-//*********************************
-@mixin background($device: 'mobile') {
-    background-image: 
-            url('https://said-alrove.github.io/social-proof-section-sass/assets/svg/bg-pattern-top-#{$device}.svg'),
-            url('https://said-alrove.github.io/social-proof-section-sass/assets/svg/bg-pattern-bottom-#{$device}.svg');
-}

@@ -1,8 +1,0 @@
-@use 'sass:string';
-//********************************* 
-//* FONTS 
-//*********************************
-$font-main: string.quote('Red Hat Display'), sans-serif;
-$ff: (
-    'main': $font-main
-);
