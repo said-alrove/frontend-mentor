@@ -1,24 +1,24 @@
 [submodule "four-card-feature-sass"]
 	path = four-card-feature-sass
-	url = https://github.com/said-alrove/four-card-feature-sass
+	url = https://github.com/said-alrove/four-card-feature-sass.git
 [submodule "three-columns-card"]
 	path = three-columns-card
-	url = https://github.com/said-alrove/three-columns-card
+	url = https://github.com/said-alrove/three-columns-card.git
 [submodule "stats-preview-card-sass"]
 	path = stats-preview-card-sass
-	url = https://github.com/said-alrove/stats-preview-card-sass
+	url = https://github.com/said-alrove/stats-preview-card-sass.git
 [submodule "social-proof-section-sass"]
 	path = social-proof-section-sass
-	url = https://github.com/said-alrove/social-proof-section-sass
+	url = https://github.com/said-alrove/social-proof-section-sass.git
 [submodule "profile-card-component"]
 	path = profile-card-component
-	url = https://github.com/said-alrove/profile-card-component
+	url = https://github.com/said-alrove/profile-card-component.git
 [submodule "order-summary-component"]
 	path = order-summary-component
-	url = https://github.com/said-alrove/order-summary-component
+	url = https://github.com/said-alrove/order-summary-component.git
 [submodule "three-columns-card-sass"]
 	path = three-columns-card-sass
-	url = https://github.com/said-alrove/three-columns-card-sass
+	url = https://github.com/said-alrove/three-columns-card-sass.git
 [submodule "single-price-component-sass"]
 	path = single-price-component-sass
-	url = https://github.com/said-alrove/single-price-component-sass
+	url = https://github.com/said-alrove/single-price-component-sass.git
